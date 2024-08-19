@@ -58,9 +58,9 @@
       var buildUrl = "Build";
       var loaderUrl = buildUrl + "/Clicker Web Build.loader.js";
       var config = {
-        dataUrl: buildUrl + "/Clicker Web Build.data.gz",
-        frameworkUrl: buildUrl + "/Clicker Web Build.framework.js.gz",
-        codeUrl: buildUrl + "/Clicker Web Build.wasm.gz",
+        dataUrl: buildUrl + "/Clicker Web Build.data",
+        frameworkUrl: buildUrl + "/Clicker Web Build.framework.js",
+        codeUrl: buildUrl + "/Clicker Web Build.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "SDCompany",
         productName: "CakeClickerWeb",
@@ -92,9 +92,8 @@
         unityShowBanner('WebGL builds are not supported on mobile devices.');
       } else {
         // Desktop style: Render the game canvas in a window that can be maximized to fullscreen:
+
         canvas.style = "height: 90%; width: auto;"
-        /*canvas.style.width = "600px";
-        canvas.style.height = "960px";*/
       }
 
       loadingBar.style.display = "block";
